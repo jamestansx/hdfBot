@@ -36,3 +36,6 @@ Currently, only Chrome is supported...
 
 - [ ] Multi browsers support
 - [ ] Auto scheduler to startup the program
+
+# TODO
+- [ ] Add log files ~!!1
