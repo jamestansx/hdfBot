@@ -1,5 +1,4 @@
 # hdfBot
----
 A bot to automatically complete the HDF form   
 When one brings the laziness to the next level, this project is born..
 ---
