@@ -52,11 +52,11 @@ Currently, only Chrome is supported...
     4. Select the trigger to "Daily"
     5. Set the appropriate time so that the task will be executed before 11am everyday.
     6. Select "Start a program" option
-    7. Enter the path of python.exe in Program/script section, and input the path to the main.py in Add arguments section.
+    7. Enter the path of pythonw.exe in Program/script section, and input the path to the main.pyw in Add arguments section.
          ```
-         "path/to/main.py" &
+         "path/to/main.pyw" &
          ```
-    ![alt text](https://i.imgur.com/MUw3SkI.png)
+    ![alt text](https://i.imgur.com/51WsJQE.png)
 
 * ### Linux
   Refer to [crontab](https://crontab.guru/crontab.5.html) for more info
