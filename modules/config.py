@@ -59,7 +59,7 @@ def setupSetting(pathToFile):
 def writeSettings(pathDict):
 
     data = {}
-    data["isFirstRun"] = True
+    data["isFirstRun"] = False
     data["webdriverPath"] = pathDict["webdriverPath"]
     data["matrixNumber"] = pathDict["matrixNumber"]
     return data
@@ -69,16 +69,5 @@ def getSettings():
     pathToFile = get_userdata_dir()
     if os.path.isfile(pathToFile):
         data = jsonfile.read_json(pathToFile)
-    else:
-        pass
-    webdriverPath = data["webdriverPath"]
-    matrixNumber = data["matrixNumber"]
-    return webdriverPath, matrixNumber, data["isFirstRun"]
-
-
-def updateSetting():
-    dirs = setting.getDirs(appname, appauthor)
-    userData_json = os.path.join(dirs["userData"], "userdata.json")
-    data = jsonfile.read_json(userData_json)
-    data["isFirstRun"] = False
-    jsonfile.update_json(userData_json, data)
+        return data["webdriverPath"], data["matrixNumber"], data["isFirstRun"]
+    return None, None, True

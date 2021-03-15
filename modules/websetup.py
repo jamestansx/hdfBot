@@ -1,3 +1,5 @@
+import os
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -11,6 +13,8 @@ class WebSetup:
         global driver
         path = self.driverPath
         chrome_option = Options()
+        chrome_option.add_argument("--log-level=3")
+        chrome_option.add_experimental_option("excludeSwitches", ["enable-logging"])
         chrome_option.add_argument("--headless")
         chrome_option.add_argument("--ignore-certificate-errors")
         chrome_option.add_argument("--ignore-ssl-errors")
@@ -30,4 +34,4 @@ def open_hdf(webdriverPath):
 
 
 def close_webdriver():
-    driver.close()
+    driver.quit()
