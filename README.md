@@ -11,34 +11,34 @@ When one brings the laziness to the next level, this project is born..
 
 1. Prerequisite:
 
-```markdown
-python version: 3.6.x
-```
-```markdown
-$ pip install -r [requirements.txt](https://github.com/jamestansx/hdfBot/blob/daa28971bee5325672ee91cb25e79c03870d2fc4/requirements.txt)
-```
-```markdown
-Download the [chromedriver](https://chromedriver.chromium.org/downloads) according to your Chrome version
-```
+      ```markdown
+      python version: 3.6.x
+      ```
+      [requirements.txt](https://github.com/jamestansx/hdfBot/blob/daa28971bee5325672ee91cb25e79c03870d2fc4/requirements.txt)
+      ```markdown
+      $ pip install -r requirements.txt
+      ```
+      Download the [chromedriver](https://chromedriver.chromium.org/downloads) according to your Chrome version
+
 
 2. Clone this repo
 
-  * Git
-    ```markdown
-    git clone https://github.com/jamestansx/hdfBot.git
-    ```
-  * GitHub CLI
-    ```markdown
-    gh repo clone jamestansx/hdfBot
-    ```
+    * Git
+      ```markdown
+      git clone https://github.com/jamestansx/hdfBot.git
+      ```
+    * GitHub CLI
+      ```markdown
+      gh repo clone jamestansx/hdfBot
+      ```
 
 # Usage
 
-Run this command
-```markdown
-python path/to/main.py
-```
-Alternatively, refer to [task scheduler](#Scheduler-Setup-(Workaround))
+1. Setup the configuration:
+    ```markdown
+    python /path/to/setup.py
+    ```
+2. Refer to [task scheduler](#Scheduler-Setup-(Workaround))
 # Limitation
 Currently, only Chrome is supported...
 
@@ -54,7 +54,7 @@ Currently, only Chrome is supported...
     6. Select "Start a program" option
     7. Enter the path of python.exe in Program/script section, and input the path to the main.py in Add arguments section.
          ```
-         "path/to/main.py"
+         "path/to/main.py" &
          ```
     ![alt text](https://i.imgur.com/MUw3SkI.png)
 
@@ -64,6 +64,3 @@ Currently, only Chrome is supported...
 
 - [ ] Multi browsers support
 - [ ] Auto scheduler to startup the program
-
-# TODO
-- [ ] Add log files ~!!1
