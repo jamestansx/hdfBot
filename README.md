@@ -1,8 +1,13 @@
 # hdfBot
-A bot to automatically complete the HDF form   
+
+A bot to automatically complete the HDF form
+
 When one brings the laziness to the next level, this project is born..
+
 ---
+
 # Installation
+
 
 1. Prerequisite:
 
@@ -17,22 +22,45 @@ Download the [chromedriver](https://chromedriver.chromium.org/downloads) accordi
 ```
 
 2. Clone this repo
+
   * Git
-  ```markdown
-  git clone https://github.com/jamestansx/hdfBot.git
-  ```
+    ```markdown
+    git clone https://github.com/jamestansx/hdfBot.git
+    ```
   * GitHub CLI
-  ```markdown
-  gh repo clone jamestansx/hdfBot
-  ```
+    ```markdown
+    gh repo clone jamestansx/hdfBot
+    ```
+
 # Usage
-Run this command in the directory that the repo is cloned
+
+Run this command
 ```markdown
-python main.py
+python path/to/main.py &
 ```
+Alternatively, refer to [task scheduler](#Scheduler-Setup-(Workaround))
 # Limitation
-Currently, only Chrome is supported... 
-# Roadmap 
+Currently, only Chrome is supported...
+
+# Scheduler Setup (Workaround)
+
+* ### Windows
+
+    1. Lauch Window's Task Scheduler
+    2. Click on the Create Basic Task action
+    3. Input the name and description of the task
+    4. Select the trigger to "Daily"
+    5. Set the appropriate time so that the task will be executed before 11am everyday.
+    6. Select "Start a program" option
+    7. Enter the path of python.exe in Program/script section, and input the path to the main.py in Add arguments section.
+         ```
+         "path/to/main.py" &
+         ```
+    ![alt text](https://i.imgur.com/MUw3SkI.png)
+
+* ### Linux
+  Refer to [crontab](https://crontab.guru/crontab.5.html) for more info
+# Roadmap
 
 - [ ] Multi browsers support
 - [ ] Auto scheduler to startup the program
