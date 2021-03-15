@@ -19,7 +19,7 @@ def isFirstRun():
     if response:
         editSetting(userData_json)
     else:
-        sys.exit(1)
+        sys.exit()
 
 
 def editSetting(userData_json):
