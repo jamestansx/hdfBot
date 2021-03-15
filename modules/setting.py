@@ -1,4 +1,3 @@
-import logging
 import os
 
 from appdirs import AppDirs
@@ -22,11 +21,10 @@ class GetDirs:
             try:
                 os.makedirs(self.dirs[dir], exist_ok=True)
             except OSError:
-                logging.error("Could not create directory")
+                pass
         return True
 
 
 def getDirs(appname, appauthor):
     get_dirs = GetDirs(appname, appauthor)
-    logging.debug("directory(s) is created")
     return get_dirs.get_dirs()

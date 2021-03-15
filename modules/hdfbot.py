@@ -2,7 +2,7 @@ from selenium.common.exceptions import *
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 
-import modules.websetup
+import modules.websetup as websetup
 
 
 def bot(driver, matrix_number):
@@ -28,7 +28,7 @@ def wait_for_loading(driver):
     attempts = 0
     while attempts < 3:
         try:
-            isLoading = WebDriverWait(driver, 15).until_not(
+            WebDriverWait(driver, 15).until_not(
                 lambda x: driver.find_element_by_xpath("//*[@id='pg-loader']")
             )
             print("loaded")
