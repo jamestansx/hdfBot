@@ -36,7 +36,7 @@ Download the [chromedriver](https://chromedriver.chromium.org/downloads) accordi
 
 Run this command
 ```markdown
-python path/to/main.py &
+python path/to/main.py
 ```
 Alternatively, refer to [task scheduler](#Scheduler-Setup-(Workaround))
 # Limitation
@@ -54,7 +54,7 @@ Currently, only Chrome is supported...
     6. Select "Start a program" option
     7. Enter the path of python.exe in Program/script section, and input the path to the main.py in Add arguments section.
          ```
-         "path/to/main.py" &
+         "path/to/main.py"
          ```
     ![alt text](https://i.imgur.com/MUw3SkI.png)
 
