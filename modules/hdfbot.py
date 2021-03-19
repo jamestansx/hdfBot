@@ -7,7 +7,7 @@ import modules.websetup as websetup
 
 
 def bot(driver, matrix_number):
-    logger = log.newLogging()
+    logger = log.newLogging("log.log")
 
     click_pelajarSect(driver, logger)
     wait_for_loading(driver, logger)

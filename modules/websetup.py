@@ -25,7 +25,7 @@ class WebSetup:
         return driver
 
     def open_webdriver(self):
-        logger = log.newLogging()
+        logger = log.newLogging("log.log")
         driver = self.setupSelenium()
         try:
             driver.get(self.URL)
