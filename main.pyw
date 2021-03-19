@@ -19,4 +19,3 @@ def main(driver, matrixNumber):
 if __name__ == "__main__":
     driver, matrixNumber = setup()
     main(driver, matrixNumber)
-    sys.exit()
