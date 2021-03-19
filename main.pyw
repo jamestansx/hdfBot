@@ -17,5 +17,8 @@ def main(driver, matrixNumber):
 
 
 if __name__ == "__main__":
-    driver, matrixNumber = setup()
-    main(driver, matrixNumber)
+    try:
+        driver, matrixNumber = setup()
+        main(driver, matrixNumber)
+    except Exception:
+        websetup.close_webdriver()
