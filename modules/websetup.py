@@ -1,7 +1,9 @@
-import os
+import sys
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+
+import modules.log as log
 
 
 class WebSetup:
@@ -23,8 +25,13 @@ class WebSetup:
         return driver
 
     def open_webdriver(self):
+        logger = log.newLogging()
         driver = self.setupSelenium()
-        driver.get(self.URL)
+        try:
+            driver.get(self.URL)
+        except Exception as e:
+            logger.critical(f"Couldn't access webpage.\n------\nDetails:\n{e}")
+            sys.exit(1)
         return driver
 
 
