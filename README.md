@@ -39,7 +39,14 @@ When one brings the laziness to the next level, this project is born..
    ```markdown
    python /path/to/setup.py
    ```
+   ![alt text](https://i.imgur.com/wVfrBIg.gif)
 2. Refer to [task scheduler](<#Scheduler-Setup-(Workaround)>)
+3. Update Configuration:
+
+       python /path/to/setup.py
+    ![alt text](https://i.imgur.com/yBq7TKZ.gif)
+
+
 
 # Limitation
 
@@ -49,6 +56,7 @@ Currently, only Chrome is supported...
 
 - ### Windows
 
+  ![alt text](https://i.imgur.com/5gaX1tu.gif)
   1. Lauch Window's Task Scheduler
   2. Click on the Create Basic Task action
   3. Input the name and description of the task
