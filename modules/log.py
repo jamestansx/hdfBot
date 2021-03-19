@@ -28,5 +28,5 @@ def newLogging(logFileName, logLevel = "INFO"):
     logDir = os.path.join(dirs["userLog"], logFileName)
     choices = {"DEBUG":logging.DEBUG, "INFO": logging.INFO, "WARN": logging.WARN, "ERROR": logging.ERROR, "CRITICAL": logging.CRITICAL}
     level = choices.get(logLevel, logging.INFO)
-    log.log(logger, level, logDir)
+    log(logger, level, logDir)
     return logger
