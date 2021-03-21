@@ -65,6 +65,8 @@ Currently, only Chrome is supported...
   6. Select "Start a program" option
   7. Enter the path of pythonw.exe in Program/script section, and input the path to the [main.pyw](main.pyw) in Add arguments section.
      ` "path/to/main.pyw" `
+
+
      ![alt text](https://i.imgur.com/51WsJQE.png)
 
 - ### Linux
