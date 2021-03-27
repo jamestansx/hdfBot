@@ -75,4 +75,4 @@ Currently, only Chrome is supported...
 # Roadmap
 
 - [ ] Multi browsers support
-- [ ] Auto scheduler to startup the program
+- [x] Auto scheduler to startup the program
